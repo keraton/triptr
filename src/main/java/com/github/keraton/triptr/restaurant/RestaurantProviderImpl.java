@@ -1,10 +1,11 @@
 package com.github.keraton.triptr.restaurant;
 
+import com.github.keraton.triptr.domain.model.RestaurantTrip;
 import com.github.keraton.triptr.domain.provider.RestaurantProvider;
 import com.github.keraton.triptr.note.NoteProvider;
 import com.github.keraton.triptr.restaurant.client.RestaurantProviderClient;
+import com.github.keraton.triptr.restaurant.mapper.RestaurantMapper;
 import com.github.keraton.triptr.restaurant.model.Restaurant;
-import com.github.keraton.triptr.domain.model.RestaurantTrip;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -15,18 +16,21 @@ public class RestaurantProviderImpl implements RestaurantProvider {
 
     private final RestaurantProviderClient restaurantProviderClient;
     private final NoteProvider noteProvider;
+    private final RestaurantMapper restaurantMapper;
 
     public RestaurantProviderImpl(RestaurantProviderClient restaurantProviderClient,
-                                  NoteProvider noteProvider) {
+                                  NoteProvider noteProvider,
+                                  RestaurantMapper restaurantMapper) {
         this.restaurantProviderClient = restaurantProviderClient;
         this.noteProvider = noteProvider;
+        this.restaurantMapper = restaurantMapper;
     }
 
     @Override
     public List<RestaurantTrip> find(String city) {
         List<Restaurant> restaurants = restaurantProviderClient.find(city);
         return restaurants.stream()
-                .map(RestaurantTrip::convert)
+                .map(restaurantMapper::map)
                 .map(restaurantTrip -> {
                     restaurantTrip.setNote(noteProvider.getNote(restaurantTrip.getRefId()));
                     return restaurantTrip;

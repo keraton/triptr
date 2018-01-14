@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HotelMapper {
 
-    public static HotelTrip map(Hotel hotel) {
+    public HotelTrip map(Hotel hotel) {
         return new HotelTrip(hotel.getRefId(), hotel.getName(), hotel.getCity());
     }
 }

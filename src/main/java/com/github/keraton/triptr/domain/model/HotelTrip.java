@@ -1,7 +1,5 @@
 package com.github.keraton.triptr.domain.model;
 
-import com.github.keraton.triptr.hotel.mapper.HotelMapper;
-import com.github.keraton.triptr.hotel.model.Hotel;
 import lombok.Data;
 
 public @Data class HotelTrip {
@@ -11,8 +9,5 @@ public @Data class HotelTrip {
     private final String city;
     private NoteTrip note;
 
-    public static HotelTrip convert(Hotel hotel) {
-        return HotelMapper.map(hotel);
-    }
 
 }
