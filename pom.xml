@@ -9,6 +9,7 @@
     <modules>
 		<module>domain</module>
 		<module>web</module>
+		<module>note</module>
 	</modules>
     <packaging>pom</packaging>
 
