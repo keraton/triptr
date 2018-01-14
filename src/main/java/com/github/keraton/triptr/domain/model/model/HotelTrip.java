@@ -1,6 +1,7 @@
-package com.github.keraton.triptr.model;
+package com.github.keraton.triptr.domain.model.model;
 
-import com.github.keraton.triptr.mapper.HotelMapper;
+import com.github.keraton.triptr.hotel.mapper.HotelMapper;
+import com.github.keraton.triptr.hotel.model.Hotel;
 import lombok.Data;
 
 public @Data class HotelTrip {

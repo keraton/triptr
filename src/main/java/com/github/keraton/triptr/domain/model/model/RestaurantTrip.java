@@ -1,6 +1,7 @@
-package com.github.keraton.triptr.model;
+package com.github.keraton.triptr.domain.model.model;
 
-import com.github.keraton.triptr.mapper.RestaurantMapper;
+import com.github.keraton.triptr.restaurant.mapper.RestaurantMapper;
+import com.github.keraton.triptr.restaurant.model.Restaurant;
 import lombok.Data;
 
 public @Data class RestaurantTrip {

@@ -1,8 +1,9 @@
-package com.github.keraton.triptr.provider;
+package com.github.keraton.triptr.hotel;
 
-import com.github.keraton.triptr.client.HotelProviderClient;
-import com.github.keraton.triptr.model.Hotel;
-import com.github.keraton.triptr.model.HotelTrip;
+import com.github.keraton.triptr.hotel.client.HotelProviderClient;
+import com.github.keraton.triptr.hotel.model.Hotel;
+import com.github.keraton.triptr.domain.model.model.HotelTrip;
+import com.github.keraton.triptr.note.NoteProvider;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

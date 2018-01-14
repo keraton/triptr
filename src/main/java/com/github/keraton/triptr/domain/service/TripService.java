@@ -1,8 +1,8 @@
-package com.github.keraton.triptr.service;
+package com.github.keraton.triptr.domain.service;
 
-import com.github.keraton.triptr.model.Trip;
-import com.github.keraton.triptr.provider.HotelProvider;
-import com.github.keraton.triptr.provider.RestaurantProvider;
+import com.github.keraton.triptr.domain.model.model.Trip;
+import com.github.keraton.triptr.hotel.HotelProvider;
+import com.github.keraton.triptr.restaurant.RestaurantProvider;
 import org.springframework.stereotype.Service;
 
 @Service

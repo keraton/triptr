@@ -1,4 +1,4 @@
-package com.github.keraton.triptr.model;
+package com.github.keraton.triptr.note.model;
 
 import lombok.Data;
 

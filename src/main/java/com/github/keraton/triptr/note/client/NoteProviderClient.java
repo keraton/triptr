@@ -1,6 +1,6 @@
-package com.github.keraton.triptr.client;
+package com.github.keraton.triptr.note.client;
 
-import com.github.keraton.triptr.model.Note;
+import com.github.keraton.triptr.note.model.Note;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

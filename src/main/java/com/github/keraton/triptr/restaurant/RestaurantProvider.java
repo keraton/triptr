@@ -1,8 +1,9 @@
-package com.github.keraton.triptr.provider;
+package com.github.keraton.triptr.restaurant;
 
-import com.github.keraton.triptr.client.RestaurantProviderClient;
-import com.github.keraton.triptr.model.Restaurant;
-import com.github.keraton.triptr.model.RestaurantTrip;
+import com.github.keraton.triptr.note.NoteProvider;
+import com.github.keraton.triptr.restaurant.client.RestaurantProviderClient;
+import com.github.keraton.triptr.restaurant.model.Restaurant;
+import com.github.keraton.triptr.domain.model.model.RestaurantTrip;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

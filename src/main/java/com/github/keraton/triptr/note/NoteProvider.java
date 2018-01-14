@@ -1,10 +1,10 @@
-package com.github.keraton.triptr.provider;
+package com.github.keraton.triptr.note;
 
-import com.github.keraton.triptr.client.NoteProviderClient;
-import com.github.keraton.triptr.model.Note;
-import com.github.keraton.triptr.model.NoteCategoryTrip;
-import com.github.keraton.triptr.model.NoteTrip;
-import com.github.keraton.triptr.util.NoteUtils;
+import com.github.keraton.triptr.note.client.NoteProviderClient;
+import com.github.keraton.triptr.note.model.Note;
+import com.github.keraton.triptr.domain.model.model.NoteCategoryTrip;
+import com.github.keraton.triptr.domain.model.model.NoteTrip;
+import com.github.keraton.triptr.note.util.NoteUtils;
 import org.springframework.stereotype.Component;
 
 @Component
