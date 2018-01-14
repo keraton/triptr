@@ -6,7 +6,10 @@
 	<groupId>com.github.keraton</groupId>
 	<artifactId>triptr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <modules>
+        <module>web</module>
+    </modules>
+    <packaging>pom</packaging>
 
 	<name>triptr</name>
 	<description>Demo project for Spring Boot</description>

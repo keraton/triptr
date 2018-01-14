@@ -4,6 +4,7 @@ import com.github.keraton.triptr.restaurant.model.Restaurant;
 import com.github.keraton.triptr.domain.model.RestaurantTrip;
 import org.springframework.stereotype.Component;
 
+@Component
 public class RestaurantMapper {
 
     public RestaurantTrip map(Restaurant restaurant) {
