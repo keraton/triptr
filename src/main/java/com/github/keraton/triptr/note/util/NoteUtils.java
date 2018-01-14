@@ -1,9 +1,9 @@
 package com.github.keraton.triptr.note.util;
 
-import com.github.keraton.triptr.domain.model.model.NoteCategoryTrip;
+import com.github.keraton.triptr.domain.model.NoteCategoryTrip;
 import org.springframework.stereotype.Component;
 
-import static com.github.keraton.triptr.domain.model.model.NoteCategoryTrip.*;
+import static com.github.keraton.triptr.domain.model.NoteCategoryTrip.*;
 
 @Component
 public class NoteUtils {

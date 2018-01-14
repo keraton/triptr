@@ -1,8 +1,9 @@
 @startuml
 
 [Web] --> [Domain]
-[Domain] --> [Hotel]
-[Domain] --> [Restaurant]
+[Domain] <-- [Hotel]
+[Domain] <-- [Note]
+[Domain] <-- [Restaurant]
 
 [Hotel] --> [Note]
 [Restaurant] --> [Note]

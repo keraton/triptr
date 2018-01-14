@@ -1,7 +1,7 @@
 package com.github.keraton.triptr.hotel.mapper;
 
 import com.github.keraton.triptr.hotel.model.Hotel;
-import com.github.keraton.triptr.domain.model.model.HotelTrip;
+import com.github.keraton.triptr.domain.model.HotelTrip;
 import org.springframework.stereotype.Component;
 
 @Component

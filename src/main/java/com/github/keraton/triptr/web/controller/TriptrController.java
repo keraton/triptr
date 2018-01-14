@@ -1,6 +1,6 @@
 package com.github.keraton.triptr.web.controller;
 
-import com.github.keraton.triptr.domain.model.model.Trip;
+import com.github.keraton.triptr.domain.model.Trip;
 import com.github.keraton.triptr.domain.service.TripService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

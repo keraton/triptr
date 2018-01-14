@@ -1,4 +1,4 @@
-package com.github.keraton.triptr.domain.model.model;
+package com.github.keraton.triptr.domain.model;
 
 import com.github.keraton.triptr.hotel.mapper.HotelMapper;
 import com.github.keraton.triptr.hotel.model.Hotel;
