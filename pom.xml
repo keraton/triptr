@@ -7,8 +7,9 @@
 	<artifactId>triptr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>web</module>
-    </modules>
+		<module>domain</module>
+		<module>web</module>
+	</modules>
     <packaging>pom</packaging>
 
 	<name>triptr</name>
@@ -48,14 +49,7 @@
 
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+
 
 
 </project>
