@@ -36,6 +36,20 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.keraton</groupId>
+            <artifactId>service</artifactId>
+            <classifier>api</classifier>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.keraton</groupId>
+            <artifactId>service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

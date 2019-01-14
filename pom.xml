@@ -12,6 +12,7 @@
 		<module>note</module>
 		<module>hotel</module>
 		<module>restaurant</module>
+		<module>service</module>
 	</modules>
     <packaging>pom</packaging>
 

@@ -21,7 +21,33 @@
             <groupId>com.github.keraton</groupId>
             <artifactId>note</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <classifier>api</classifier>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>api</classifier>
+                            <includes>
+                                <include>**/api/*</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

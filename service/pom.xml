@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hotel</artifactId>
+    <artifactId>service</artifactId>
 
     <dependencies>
         <dependency>
@@ -20,7 +20,14 @@
         </dependency>
         <dependency>
             <groupId>com.github.keraton</groupId>
-            <artifactId>note</artifactId>
+            <artifactId>hotel</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <classifier>api</classifier>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.keraton</groupId>
+            <artifactId>restaurant</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <classifier>api</classifier>
             <scope>compile</scope>

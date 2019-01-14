@@ -1,8 +1,8 @@
 package com.github.keraton.triptr.restaurant;
 
 import com.github.keraton.triptr.domain.model.RestaurantTrip;
-import com.github.keraton.triptr.domain.provider.RestaurantProvider;
-import com.github.keraton.triptr.note.NoteProvider;
+import com.github.keraton.triptr.restaurant.api.RestaurantProvider;
+import com.github.keraton.triptr.note.api.NoteProvider;
 import com.github.keraton.triptr.restaurant.client.RestaurantProviderClient;
 import com.github.keraton.triptr.restaurant.mapper.RestaurantMapper;
 import com.github.keraton.triptr.restaurant.model.Restaurant;
