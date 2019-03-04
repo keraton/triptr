@@ -12,12 +12,14 @@
     <artifactId>service</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>com.github.keraton</groupId>
             <artifactId>domain</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.github.keraton</groupId>
             <artifactId>hotel</artifactId>
@@ -25,6 +27,7 @@
             <classifier>api</classifier>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>com.github.keraton</groupId>
             <artifactId>restaurant</artifactId>
