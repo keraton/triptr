@@ -1,13 +1,13 @@
 package com.github.keraton.triptr.domain.model;
 
-import lombok.Data;
+import lombok.Value;
 
-public @Data class HotelTrip {
+public @Value class HotelTrip {
 
     private final String refId;
     private final String name;
     private final String city;
-    private NoteTrip note;
+    private final NoteTrip note;
 
 
 }

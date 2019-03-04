@@ -16,15 +16,12 @@ import static java.util.stream.Collectors.toList;
 public class HotelProviderImpl implements HotelProvider {
 
     private final HotelProviderClient hotelProviderClient;
-    private final NoteProvider noteProvider;
     private final HotelMapper hotelMapper;
 
 
     public HotelProviderImpl(HotelProviderClient hotelProviderClient,
-                             NoteProvider noteProvider,
                              HotelMapper hotelMapper) {
         this.hotelProviderClient = hotelProviderClient;
-        this.noteProvider = noteProvider;
         this.hotelMapper = hotelMapper;
     }
 
@@ -33,10 +30,6 @@ public class HotelProviderImpl implements HotelProvider {
         List<Hotel> hotels = hotelProviderClient.find(city);
         return hotels.stream()
                 .map(hotelMapper::map)
-                .map(hotelTrip -> {
-                    hotelTrip.setNote(noteProvider.getNote(hotelTrip.getRefId()));
-                    return hotelTrip;
-                })
                 .collect(toList());
     }
 }

@@ -1,9 +1,9 @@
 package com.github.keraton.triptr.domain.model;
 
 
-import lombok.Data;
+import lombok.Value;
 
-public @Data class NoteTrip {
+public @Value class NoteTrip {
 
     private final Integer stars;
     private final NoteCategoryTrip category;

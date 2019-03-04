@@ -1,10 +1,10 @@
 package com.github.keraton.triptr.domain.model;
 
-import lombok.Data;
+import lombok.Value;
 
 import java.util.List;
 
-public @Data class Trip {
+public @Value class Trip {
 
     private String city;
     private List<HotelTrip> hotels;

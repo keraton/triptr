@@ -20,10 +20,6 @@ public class TripServiceImpl implements TripService {
 
     @Override
     public Trip trip(String city) {
-        Trip trip = new Trip();
-        trip.setCity(city);
-        trip.setHotels(hotelProvider.find(city));
-        trip.setRestaurants(restaurantProvider.find(city));
-        return trip;
+        return new Trip(city, hotelProvider.find(city), restaurantProvider.find(city));
     }
 }
