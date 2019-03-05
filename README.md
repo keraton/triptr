@@ -7,7 +7,7 @@ These are the steps :
 * Migrate the POJO with the help of IntelliK
 * Migrate the Test with the help of IntelliJ
 * Migrate the business logic
-* Migrate the configuration
+* Migrate the configuration (springboot, configurationa class)
 
 If you manage to finish this, after the migration you can add this new feature with kotlin
 * Modify the city end point in order to filter with the note
