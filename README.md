@@ -4,7 +4,7 @@ The exercise is too migrate this Java SpringBoot App to Kotlin Spring Boot App
 
 These are the steps :
 * Put right maven dependency and maven plugin See [https://kotlinlang.org/docs/reference/using-maven.html]
-* Migrate the POJO with the help of IntelliK
+* Migrate the POJO with the help of IntelliJ
 * Migrate the Test with the help of IntelliJ
 * Migrate the business logic
 * Migrate the configuration (springboot, configurationa class)
